@@ -15,9 +15,6 @@ class Solution(object):
             list.append(head.val)
             head = head.next
 
-        if len(list) % 2 == 1:
-            return False
-
         for i in range(int(len(list)/2)):
             if list[i] != list[-1-i]:
                 return False
